@@ -3,36 +3,119 @@
   <head>
     <title>artfinder</title>
 
-  </head>
-  <body background="https://i.ibb.co/ZpSY3k1q/photo-collage-png.png"
-  style="background-repeat:no-repeat ;
-       background-attachment:fixed;
-       background-size: 53% 100%;
-       background-position:100%;
-       background-color: rgba(231, 231, 229, 0.334);" >
+  <!--internal css-->
+  <style>
+    body{
+      background-color: black;
+    }
+    header{
+      margin-left: 2%;
+    }
+    header section#left{
+      background-color: aqua;
+      margin-right: 2%;
+      width: 60%;
+      height: 50px;
+      float: left;
+    }
+    header section#right{
+      background-color: aqua;
+      margin-right: 2%;
+      width: 20%;
+      height: 50px;
+      float: right;
+    }
+    article{
+      background-color: blue;
+      margin-right: 2%;
+      margin-top: 2%;
+      margin-left: 2%;
+      margin-bottom: 2%;
+      float: left;
+      width: 45%;
+      min-height: 100px;
+    }
+    aside{
+      width: 47%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-right: 2%;
+      min-height:550px ;
+      float: right;
+      background-color: red;
+    }
+    aside section{
+      height: 190px;
+      background-color: purple;
+      margin-top: 2%;
+    }
+    aside section#Wet{
+      background-image: url(https://escapemotions1.b-cdn.net/images/rebelle7/title_images/r7-background-1_v1.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      transition: ease 0.4s;
+    }
+    aside section#Wet:hover{
+      transition: ease 0.4s;
+      filter: grayscale(100);
+    }
+    aside section#Dry{
+      background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIxu67tluwMV4R3yNYyyqoBgm1yXWw49vLYXCubgquMDmTTHzqpfBddXY_x3jXpOzmA37iovS7yXvvtcApllx6jQCMy_9ZAF-HjGmD_Ga45LUt9DxhF0ga5NTCg70Yp9z0k9uR_cmyGICx/s2048/20210311_211401+%25282%2529.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      transition: ease 0.4s;
+    }
+    aside section#Dry:hover{
+      transition: ease 0.4s;
+      filter: grayscale(100);
+    }
+    aside section#Digital{
+      background-image: url(https://www.shutterstock.com/image-photo/brunette-woman-artist-illustrator-drawing-600nw-2327792969.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      transition: ease 0.4s;
+    }
+    aside section#Digital:hover{
+      transition: ease 0.4s;
+      filter: grayscale(100);
+    }
+    footer{
+      float: left;
+      margin-left: 2%;
+      margin-bottom: 2%;
+      width: 45%;
+      min-height: 69px;
+      background-color: green;
+    }
+  </style>
 
-  <header>
-    <h1>Welcome to My Website!</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="contact.html">Contact</a>
-  
-    </nav>
-  </header>
-  
-    <div style="position: absolute;left: 71%;  top: 10%;"> 
-      <h1>Wet Media</h1>
-    </div>
-    <div style="position: absolute;left: 72%; top: 45%;">
-      <h1>Dry Media</h1>
-    </div>
-    <div style="position: absolute;left: 70%; top: 77%;">
-      <h1>Digital Media</h1>
-    </div>
+  </head>
+
+  <body>
+
+    <header>
+     <section id="left"><h1>web name</h1></section>
+      <section id="right"><h1>logo</h1></section>
+    </header>
+
+    <article>
+      <p1>kgrakbevkbarkvbbvdkchebrv</p1>
+
+    </article>
+
+    <aside>
+      <section id="Wet"><h1>wet Media</h1></section>
+      <section id="Dry"><h1>dry Media</h1></section>
+      <section id="Digital"><h1>Digital Media</h1></section>
+    </aside>
     
-    <p>easier to find easier to use</p>
-    <p>a concise and intuitive database of trusted art products and thier retailers </p>
+    <footer>
+      <nav>
+        <a href="index.html">Home</a> 
+        <a href="about.html">About</a> 
+        <a href="contact.html">Contact</a>
+      </nav>  
+    </footer>
 
   </body>
 </html>
