@@ -6,8 +6,9 @@
   <!--internal css-->
   <style>
     body{
-      background-color: #1b1c1b;
+      background-color: #1c1d1c;
     }
+
     header section#left{
       font-family: 'Times New Roman', Times, serif;
       color: aqua;
@@ -18,7 +19,7 @@
       float: left;
     }
     header section#right{
-      background-color: aqua;
+      background-color: #343634;
       margin-right: 2%;
       width: 20%;
       height: 50px;
@@ -26,35 +27,54 @@
       border-radius: 100%;
       text-align: center;
     }
+
     article{
-      background-color: blue;
+      background-color: #343634;
+      color: #aaa9a9;
       margin-right: 2%;
       margin-top: 2%;
       margin-left: 1%;
       margin-bottom: 2%;
-      float: left;
+      float: right;
       width: 45%;
-      min-height: 100px;
+      border-radius: 12px; 
     }
+    article section{
+      background-color: blue;
+      float: right;
+      height: 480px;
+      width: 31.9%;
+      background-image: url(https://media.istockphoto.com/id/1048160600/vector/blue-overlap-pixel-speed-abstract-background.jpg?s=612x612&w=0&k=20&c=5uAtFm-pEmVMapJeb8v-EcRBfIt3eFbfdmBPSB8kdL8=);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border-radius: 12px;
+    }
+    article section#about{
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
     aside{
-      
       width: 47%;
-      margin-top: 2%;
+      margin-top: 1%;
       margin-bottom: 2%;
       margin-right: 2%;
       max-height:550px ;
-      float: right;
-      
+      float: left;
     }
     aside section{
-      text-align: center;
+      text-align: left;
       color: aquamarine;
       text-shadow: solid 10px 10px 10px black;
       height: 190px;
       border-radius: 15px;
       background-color: purple;
-      
     }
+    aside section h1{
+      padding-top: 11%;
+      padding-left: 5px;
+    }
+
     aside section#Wet{
       background-image: url(https://escapemotions1.b-cdn.net/images/rebelle7/title_images/r7-background-1_v1.jpg);
       background-size: 100% 120%;
@@ -85,15 +105,27 @@
       transition: ease 0.4s;
       filter: grayscale(100);
     }
+
     footer{
       border-top: solid 3px whitesmoke;
-      float: left;
-      margin-left: 1%;
+      float: right;
+      margin-right: 2%;
       margin-bottom: 2%;
       width: 45%;
-      min-height: 69px;
-      
+      min-height: 69px; 
     }
+    footer nav {
+      float:left;
+    }
+    footer span{
+      float: right;
+    }
+    footer li{
+      margin-top: 10px;
+      list-style: none;
+
+    }
+
   </style>
 
   </head>
@@ -106,8 +138,9 @@
     </header>
 
     <article>
-      <p1>kgrakbevkbarkvbbvdkchebrv</p1>
-
+      <section id="home"><p1>home</p1></section>
+      <section id="about"><p1>about</p1></section>
+      <section id="contact"><p1>contact</p1></section>
     </article>
 
     <aside>
@@ -118,10 +151,11 @@
     
     <footer>
       <nav>
-        <a href="index.html">Home</a> 
-        <a href="about.html">About</a> 
-        <a href="contact.html">Contact</a>
-      </nav>  
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </nav> 
+      <span>Follow Us: F  |  X   |   Y   |   L</span> 
     </footer>
 
   </body>
