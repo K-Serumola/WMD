@@ -11,7 +11,7 @@
 
     header section#left{
       font-family: 'Times New Roman', Times, serif;
-      color: aqua;
+     
       border-bottom: solid 5px whitesmoke;
       margin-right: 2%;
       width: 60%;
@@ -19,7 +19,7 @@
       float: left;
     }
     header section#right{
-      background-color: #343634;
+      background-color: #414541;
       margin-right: 2%;
       width: 20%;
       height: 50px;
@@ -39,8 +39,9 @@
       width: 45%;
       border-radius: 12px; 
     }
-    article section{
+    article button{
       background-color: blue;
+      font-size: larger;
       float: right;
       height: 480px;
       width: 31.9%;
@@ -48,8 +49,13 @@
       background-size: 100% 100%;
       background-repeat: no-repeat;
       border-radius: 12px;
+      transition: ease 0.4s;
     }
-    article section#about{
+    article button:hover{
+      transition: ease 0.4s;
+      filter: grayscale(100);
+    }
+    article button#about{
       margin-left: 2%;
       margin-right: 2%;
     }
@@ -64,7 +70,6 @@
     }
     aside section{
       text-align: left;
-      color: aquamarine;
       text-shadow: solid 10px 10px 10px black;
       height: 190px;
       border-radius: 15px;
@@ -138,9 +143,9 @@
     </header>
 
     <article>
-      <section id="home"><p1>home</p1></section>
-      <section id="about"><p1>about</p1></section>
-      <section id="contact"><p1>contact</p1></section>
+      <button id="home"><p1>home</p1></button>
+      <button id="about"><p1>about</p1></button>
+      <button id="contact"><p1>contact</p1></button>
     </article>
 
     <aside>
