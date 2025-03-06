@@ -11,7 +11,7 @@
 
     header section#left{
       font-family: 'Times New Roman', Times, serif;
-     
+     color: aliceblue;
       border-bottom: solid 5px whitesmoke;
       margin-right: 2%;
       width: 60%;
@@ -50,6 +50,7 @@
       background-repeat: no-repeat;
       border-radius: 12px;
       transition: ease 0.4s;
+      cursor: pointer;
     }
     article button:hover{
       transition: ease 0.4s;
@@ -73,7 +74,7 @@
       text-shadow: solid 10px 10px 10px black;
       height: 190px;
       border-radius: 15px;
-      background-color: purple;
+     background-color: aqua;
     }
     aside section h1{
       padding-top: 11%;
@@ -143,23 +144,30 @@
     </header>
 
     <article>
-      <button id="home"><p1>home</p1></button>
-      <button id="about"><p1>about</p1></button>
-      <button id="contact"><p1>contact</p1></button>
+      <a href="index.html">
+        <button id="home"><p1>home</p1></button>
+      </a>
+      <a href="about.html">
+        <button id="about"><p1>about</p1></button>
+      </a>
+      <a href="contact.html">
+        <button id="contact"><p1>contact</p1></button>
+      </a>
     </article>
 
     <aside>
-      <section id="Wet"><h1>Wet Media</h1></section>
-      <section id="Dry"><h1>Dry Media</h1></section>
-      <section id="Digital"><h1>Digital Media</h1></section>
+      <a href="wet.html">
+        <section id="Wet"><h1>Wet Media</h1></section>
+      </a>
+      <a href="dry.html">
+        <section id="Dry"><h1>Dry Media</h1></section>
+      </a>
+      <a href="digital.html">
+        <section id="Digital"><h1>Digital Media</h1></section>
+      </a>
     </aside>
     
     <footer>
-      <nav>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </nav> 
       <span>Follow Us: F  |  X   |   Y   |   L</span> 
     </footer>
 
