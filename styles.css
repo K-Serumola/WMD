@@ -1,0 +1,116 @@
+/* General Body Styles */
+body {
+    background-color: #f4f4f4;  /* Light background for the body */
+    font-family: 'Arial', sans-serif; /* Clean, readable font */
+    margin: 0;
+    padding: 0;
+    color: #333;  /* Default text color */
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #222;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #009688;
+}
+
+/* Section Specific Styles */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* For Wet, Dry, and Digital Pages: */
+.wet, .dry, .digital {
+    padding: 40px;
+    border: 2px solid #ccc;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Wet Page Styles */
+.wet {
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+.wet h2 {
+    color: #0277bd;
+    font-size: 2rem;
+}
+
+/* Dry Page Styles */
+.dry {
+    background-color: #f1f8e9; /* Light green background */
+}
+
+.dry h2 {
+    color: #388e3c;
+    font-size: 2rem;
+}
+
+/* Digital Page Styles */
+.digital {
+    background-color: #ede7f6; /* Light purple background */
+}
+
+.digital h2 {
+    color: #6a1b9a;
+    font-size: 2rem;
+}
+
+/* Card Styles for all pages (Wet, Dry, Digital) */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
