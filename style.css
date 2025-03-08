@@ -1,0 +1,85 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+    url(https://rlasota.wordpress.com/wp-content/uploads/2013/11/img_117606_72add3a45559b64455794ca4119df881.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header section#left {
+    padding-left: 1%;
+    float: left;
+    height: 70px;
+    width: 60%;
+    margin-bottom: 2%;
+}
+
+header section#right {
+    padding-top: 20px;
+    align-items: center;
+    float: right;
+    width: 35%;
+    max-height: 50px;
+}
+
+header section#right a {
+    position: relative;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+header section#right a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+header section#right a:hover::after {
+    width: 100%;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+header section a {
+    float: right;
+    margin-right: 20%;
+}
+
+article {
+    clear: both;
+    margin-top: 8%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: 300px;
+    margin-bottom: 2px;
+}
+
+article h1 {
+    font-size: xx-large;
+}
+
+aside {
+    height: 300px;
+}
+
+aside section {
+    margin-right: 2%;
+    float: right;
+    width: 31%;
+    height: 300px;
+    background-color: beige;
+}

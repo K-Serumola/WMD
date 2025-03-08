@@ -5,55 +5,79 @@
     
     <!--internal css-->
     <style>
+      body{
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://rlasota.wordpress.com/wp-content/uploads/2013/11/img_117606_72add3a45559b64455794ca4119df881.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+      }
         header section#left{
-            float: left;
-            background-color: chocolate;
-            height: 70px;
-            width: 60%;
-            margin-bottom: 2%;
+          padding-left: 1%;
+          float: left;
+          height: 70px;
+          width: 60%;
+          margin-bottom: 2%;
         }
-        header section#right {
-            padding: 15px 0;
-            display: flex;
-            align-items: center;
-            margin: auto;
-            justify-content: space-between;
-            float: right;
-            width: 30%;
-            max-height: 50px;
-            background-color: bisque;
+        header section#right  {
+          padding-top: 20px ;
+          align-items: center;
+          float: right;
+          width: 35%;
+          max-height: 50px;
         }
-        header section ul li{
-            list-style: none;
-            display: inline-block;
+        header section#right a {
+          position: relative;
+          text-transform: uppercase;
+          color: white;
+          margin-bottom: 10px;
+          display: inline-block;
         }
-        
-        body{
-            background-color: #1c1d1c;
+        header section#right a::after{
+          content: '';
+          height: 3px;
+          width: 0;
+          background: #009688;
+          position: absolute;
+          left: 0;
+          top:100%;
+          margin-top: 5px; 
+          transition: 0.3s;
+        }
+        header section#right a:hover::after{
+          width: 100%;
+        }
+        a, a:hover, a:focus, a:active {
+          text-decoration: none;
+          color: inherit;
+        }
+        header section a{
+          float: right;
+          margin-right: 20%;
         }
         
         article{
-            clear: both;
-            margin-top: 8%;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            display: flex;
-            height: 300px;
-            background-color: aqua;
-            margin-bottom: 2px; 
+          clear: both;
+          margin-top: 8%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          display: flex;
+          height: 300px;
+          margin-bottom: 2px; 
+        }
+        article h1{
+          font-size: xx-large;
         }
         aside{
-            height: 300px;
-            background-color: chartreuse;
+          height: 300px;
         }
         aside section{
-            margin-right: 2%;
-            float: right;
-            width: 31%;
-            height: 300px;
-            background-color: beige;
+          margin-right: 2%;
+          float: right;
+          width: 31%;
+          height: 300px;
+          background-color: beige;
         }
         
         
@@ -68,13 +92,9 @@
             </section>  
 
             <section id="right">
-                <ul>
-                    <li>
-                        <a href="index.html">home</a>
-                        <a href="about.html">about</a>
-                        <a href="contact.html">contact</a>
-                    </li>
-                </ul>
+              <a href="index.html">home</a>
+              <a href="about.html">about</a>
+              <a href="contact.html">contact</a>
             </section>
         </header>
 
