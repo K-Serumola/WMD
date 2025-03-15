@@ -8,10 +8,9 @@ body {
 }
 
 header section#left {
-    padding-left: 1%;
+    margin-left: 3%;
     float: left;
     height: 70px;
-    display: inline-block;
     transform: scale(1.5);
     margin-bottom: 2%;
 }
@@ -19,8 +18,8 @@ header section#left {
 header section#right {
     padding-top: 20px;
     align-items: center;
+    width: 31%;
     float: right;
-    width: 35%;
     max-height: 50px;
 }
 
@@ -49,14 +48,14 @@ header section#right a:hover::after {
     width: 100%;
 }
 
-a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-}
-
 header section a {
     float: right;
     margin-right: 20%;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 article {
@@ -68,6 +67,7 @@ article {
     text-align: center;
     display: flex;
     height: 290px;
+    border-bottom: solid 3px #009688
 }
 
 article h1 {
@@ -75,6 +75,7 @@ article h1 {
 }
 
 aside {
+    margin-top: 2%;
     height: 300px;
 }
 
@@ -83,7 +84,7 @@ aside section  {
     margin-right: 1%;
     float: right;
     width: 31%;
-    height: 300px;
+    height: 260px;
     background-color: beige;
     flex-direction: column;
     justify-content: center;
@@ -96,9 +97,26 @@ aside section  {
     transition: all 0.29s ease-in-out;
 }
 
+@media (max-width:850px){
+    aside section {
+        width: 90%;
+        height: 100%;
+        float: left;
+        margin-bottom: 4%;
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+
+    header section#left{
+        margin-left: 3%;
+
+    }
+}
+
 aside section:hover {
-    transform: scale(1.1,1);
+    transform: scale(1.1);
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
     filter: grayscale(70%);
 
 }
