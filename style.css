@@ -97,7 +97,7 @@ aside section  {
     transition: all 0.29s ease-in-out;
 }
 
-@media (max-width:850px){
+@media (max-width:800px){
     aside section {
         width: 90%;
         height: 100%;
@@ -110,6 +110,18 @@ aside section  {
     header section#left{
         margin-left: 3%;
 
+    }
+}
+@media(max-width:1000px){
+    aside section{
+        width: 45%;
+        margin-bottom: 1%;
+    }
+    aside section#wet{
+        margin-right: 4%;
+    }
+    aside section#digital{
+        margin-right: 30%;
     }
 }
 
