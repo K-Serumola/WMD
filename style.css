@@ -97,6 +97,19 @@ aside section  {
     transition: all 0.29s ease-in-out;
 }
 
+@media(max-width:1000px){
+    aside section{
+        width: 45%;
+        margin-bottom: 1%;
+    }
+    aside section#wet{
+        margin-right: 4%;
+    }
+    aside section#digital{
+        margin-right: 30%;
+    }
+}
+
 @media (max-width:800px){
     aside section {
         width: 90%;
@@ -112,18 +125,8 @@ aside section  {
 
     }
 }
-@media(max-width:1000px){
-    aside section{
-        width: 45%;
-        margin-bottom: 1%;
-    }
-    aside section#wet{
-        margin-right: 4%;
-    }
-    aside section#digital{
-        margin-right: 30%;
-    }
-}
+
+
 
 aside section:hover {
     transform: scale(1.1);

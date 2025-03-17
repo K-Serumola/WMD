@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        function openImage(url) {
+            const overlay = document.getElementById('imageOverlay');
+            const overlayImg = document.getElementById('overlayImg');
+            overlayImg.src = url;
+            overlay.style.display = 'flex';
+        }
+        
+        function closeOverlay() {
+            document.getElementById('imageOverlay').style.display = 'none';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -11,8 +23,8 @@
         
         <section id="right">
             <a href="index.html">Home</a>
-            <a href="wet.html">Wet</a>
             <a href="dry.html">Dry</a>
+            <a href="wet.html">Wet</a>
         </section>
     </header>
 
@@ -21,34 +33,15 @@
     </article>
 
     <aside>
-        <div class="card">
-            <img src="https://www.shutterstock.com/image-photo/brunette-woman-artist-illustrator-drawing-600nw-2327792969.jpg" alt="Placeholder Image">
-            <div class="card-content">
-                <h2 class="card-title">Card Title</h2>
-                <p class="card-description">This is a description of the card. The text is positioned to the right of the image.</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="Placeholder Image">
-            <div class="card-content">
-                <h2 class="card-title">by:Artist Name</h2>
-                <p class="card-description">This is a description of the card. The text is positioned to the right of the image.</p>
-            </div>
-        </div>
-        <div class="card">
+        <div class="card" onclick="openImage('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630')">
             <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="Placeholder Image">
             <div class="card-content">
                 <h2 class="card-title">Card Title</h2>
-                <p class="card-description">This is a description of the card. The text is positioned to the right of the image.</p>
+                <p class="card-description">This is a description of the card. The text appears at the bottom on hover.</p>
             </div>
         </div>
-        <div class="card">
-            <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="Placeholder Image">
-            <div class="card-content">
-                <h2 class="card-title">Words</h2>
-                <p class="card-description">This is a description of the card. The text is positioned to the right of the image.</p>
-            </div>
+        <div id="imageOverlay" class="overlay" onclick="closeOverlay()">
+            <img id="overlayImg" src="" alt="Expanded Image">
         </div>
     </aside>
 
