@@ -110,7 +110,7 @@ aside section  {
     }
 }
 
-@media (max-width:800px ){
+@media (max-width:800px )and (max-height:800px){
     aside section {
         width: 90%;
         height: 100%;
@@ -128,47 +128,47 @@ aside section  {
 
 @media (max-width: 600px) {
     body {
-        font-size: 14px;
-        text-align: center;
+        font-size: 14px !important;
+        text-align: center !important;
     }
 
     header section#left {
-        float: none;
-        text-align: center;
-        margin: 0 auto;
-        transform: scale(1.2);
+        float: none !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+        transform: scale(1.2) !important;
     }
 
     header section#right {
-        float: none;
-        width: 100%;
-        text-align: center;
-        padding-top: 10px;
+        float: none !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding-top: 10px !important;
     }
 
     header section#right a {
-        display: block;
-        margin: 10px 0;
+        display: block !important;
+        margin: 10px 0 !important;
     }
 
     article {
-        margin-top: 5%;
-        height: auto;
-        padding: 20px;
+        margin-top: 5% !important;
+        height: auto !important;
+        padding: 20px !important;
     }
 
     aside {
-        margin-top: 5%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin-top: 5% !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
     aside section {
-        width: 90%;
-        height: auto;
-        margin: 10px 0;
+        width: 90% !important;
+        height: auto !important;
+        margin: 10px 0 !important;
     }
 }
 
