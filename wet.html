@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script>
-        function openImage(url) {
+        function openImage(url, artist, tools) {
             const overlay = document.getElementById('imageOverlay');
-            const overlayImg = document.getElementById('overlayImg');
-            overlayImg.src = url;
+            document.getElementById('overlayImg').src = url;
+            document.getElementById('overlayTitle').textContent = artist;
+            document.getElementById('overlayDescription').textContent = "Tools used: " + tools;
             overlay.style.display = 'flex';
         }
-        
+
         function closeOverlay() {
             document.getElementById('imageOverlay').style.display = 'none';
         }
@@ -33,56 +34,60 @@
     </article>
 
     <aside>
-        <div class="card" onclick="openImage('https://expressyourselfthroughart.weebly.com/uploads/1/3/3/1/13319402/4685023_orig.jpg?473')">
-            <img src="https://expressyourselfthroughart.weebly.com/uploads/1/3/3/1/13319402/4685023_orig.jpg?473" alt="Placeholder Image">
+        <div class="card" onclick="openImage('https://expressyourselfthroughart.weebly.com/uploads/1/3/3/1/13319402/4685023_orig.jpg?473', 'Rembrandt Harmenszoon', 'Ink')">
+            <img src="https://expressyourselfthroughart.weebly.com/uploads/1/3/3/1/13319402/4685023_orig.jpg?473" alt="Rembrandt Ink Art">
             <div class="card-content">
                 <h2 class="card-title">Artist: Rembrandt Harmenszoon</h2>
-                <p class="card-description">Tools used: Ink </p>
+                <p class="card-description">Tools used: Ink</p>
             </div>
         </div>
-
-        <div class="card" onclick="openImage('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630')">
-            <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="Placeholder Image">
+        
+        <div class="card" onclick="openImage('https://i.pinimg.com/736x/2d/a1/d8/2da1d817c1ecc080fc3d12806a3f12d8.jpg', 'Simin Hormozi', 'Watercolour')">
+            <img src="https://i.pinimg.com/736x/2d/a1/d8/2da1d817c1ecc080fc3d12806a3f12d8.jpg" alt="Simin Hormozi Watercolor">
             <div class="card-content">
-                <h2 class="card-title">Artist: </h2>
-                <p class="card-description">Tools used: </p>
+                <h2 class="card-title">Artist: Simin Hormozi</h2>
+                <p class="card-description">Tools used: Watercolour</p>
             </div>
         </div>
-
-        <div class="card" onclick="openImage('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630')">
-            <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="Placeholder Image">
+        
+        <div class="card" onclick="openImage('https://i.pinimg.com/736x/5d/1b/3e/5d1b3e2ea9556a73cac40493655fe647.jpg', 'Brooklynn Holt', 'Acrylic')">
+            <img src="https://i.pinimg.com/736x/5d/1b/3e/5d1b3e2ea9556a73cac40493655fe647.jpg" alt="Brooklynn Holt Acrylic Art">
             <div class="card-content">
-                <h2 class="card-title">Artist: </h2>
-                <p class="card-description">Tools used: </p>
+                <h2 class="card-title">Artist: Brooklynn Holt</h2>
+                <p class="card-description">Tools used: Acrylic</p>
             </div>
         </div>
-
-        <div class="card" onclick="openImage('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630')">
-            <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="Placeholder Image">
+        
+        <div class="card" onclick="openImage('https://www.artistsandillustrators.co.uk/uploads/tinymce/images/how-t-wet-in-wet-watercolour-technique.jpg', 'Fábio Cembranelli', 'Watercolour')">
+            <img src="https://www.artistsandillustrators.co.uk/uploads/tinymce/images/how-t-wet-in-wet-watercolour-technique.jpg" alt="Fábio Cembranelli Watercolor">
             <div class="card-content">
-                <h2 class="card-title">Artist: </h2>
-                <p class="card-description">Tools used: </p>
+                <h2 class="card-title">Artist: Fábio Cembranelli</h2>
+                <p class="card-description">Tools used: Watercolour</p>
             </div>
         </div>
-
-        <div class="card" onclick="openImage('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630')">
-            <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="Placeholder Image">
+        
+        <div class="card" onclick="openImage('https://www.artworkshops.com/wp-content/uploads/2018/01/IMG_7107-1.jpg', 'Fábio Cembranelli', 'Watercolour')">
+            <img src="https://www.artworkshops.com/wp-content/uploads/2018/01/IMG_7107-1.jpg" alt="Fábio Cembranelli Watercolor">
             <div class="card-content">
-                <h2 class="card-title">Artist: </h2>
-                <p class="card-description">Tools used: </p>
+                <h2 class="card-title">Artist: Fábio Cembranelli</h2>
+                <p class="card-description">Tools used: Watercolour</p>
             </div>
         </div>
-
-        <div class="card" onclick="openImage('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630')">
-            <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="Placeholder Image">
+        
+        <div class="card" onclick="openImage('https://i.ebayimg.com/images/g/RKEAAOSwsG5kwxiY/s-l400.jpg', 'Valentin-Serov', 'Oil')">
+            <img src="https://i.ebayimg.com/images/g/RKEAAOSwsG5kwxiY/s-l400.jpg" alt="Valentin-Serov Oil Painting">
             <div class="card-content">
-                <h2 class="card-title">Artist: </h2>
-                <p class="card-description">Tools used: </p>
+                <h2 class="card-title">Artist: Valentin-Serov</h2>
+                <p class="card-description">Tools used: Oil</p>
             </div>
-        </div>
+        </div>   
 
         <div id="imageOverlay" class="overlay" onclick="closeOverlay()">
-            <img id="overlayImg" src="" alt="Expanded Image">
+            <div class="overlay-content">
+                <img id="overlayImg" src="" alt="Expanded Image">
+                <h2 id="overlayTitle"></h2>
+                <p id="overlayDescription"></p>
+            </div>
         </div>
     </aside>
 
