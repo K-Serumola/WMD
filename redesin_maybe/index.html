@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>artfinder</title>
+        <style>
+            body {
+                background-color:black;
+                background-size: cover;
+                background-position: center;
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            article {
+                background-color: blue;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                float: right;
+                display: flex;
+                height: 150px;
+                width: 90%;
+                border-bottom: solid 3px #009688
+            }
+
+            aside {
+                float: right;
+                width: 90%;
+                margin-top: 0.5%;
+                background-color: blueviolet;
+            }
+
+            aside section  {
+                margin-left: 1%;
+                margin-right: 1%;
+                float: right;
+                width: 31%;
+                height: 40px;
+                background-color:red;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                display: flex;
+                font-size: xx-large;
+                font-family: 'Poppins', sans-serif;
+                border-radius: 30px;
+                transition: all 0.29s ease-in-out;
+            }
+
+            footer{
+                margin-top: 1%;
+                background-color: pink;
+                float: right;
+                width: 90%;
+            }
+
+            header section#left {
+                background-color: aqua;
+                float: left;
+                margin-left: 50%;
+                height: 50px;
+                margin-bottom: 2%;
+            }
+
+            header section#right {
+                background-color: green;
+                padding-top: 20px;
+                align-items: center;
+                width: 8%;
+                height: 80vh;
+                clear:left;
+                float: left;
+            }
+
+            header section#right a {
+                position: relative;
+                text-transform: uppercase;
+                color: white;
+                margin-bottom: 30%;
+                display: inline-block;
+            }
+
+            header section#right a::after {
+                content: '';
+                height: 3px;
+                width: 0;
+                background: #009688;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                margin-top: 5px;
+                transition: 0.3s ease-in-out;
+            }
+
+            header section#right a:hover::after {
+                transform: scale(1.05);
+                width: 100%;
+            }
+
+            header section a {
+                float: right;
+                margin-right: 20%;
+            }
+
+            a, a:hover, a:focus, a:active {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            article h1 {
+                font-size: xx-large;
+            }
+
+            aside section:hover {
+                transform: scale(1.1);
+                box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+                text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+                filter: grayscale(70%);
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><section id="left"><h1>Titlepic</h1></section></section></section></a>
+
+            <section id="right">
+              <a href="index.html">home</a>
+              <a href="about.html">about</a>
+              <a href="contact.html">contact</a>
+            </section>
+        </header>
+        
+
+        <article>
+            <h1>Medium</h1>
+            <p>A showcase of repherencable art and tecniques</p>
+        </article>
+
+        <aside>
+            <a href="wet.html">
+                <section id="wet"><h>Wet</h></section>
+            </a> 
+            <a href="dry.html">
+                <section id="dry"><h>Dry</h></section>
+            </a>
+                    
+            <a href="digital.html">
+                <section id="digital"><h>Digital</h></section>
+            </a>
+           
+        </aside>
+
+        <footer>
+            <a>Lorem ipsum dolor sit amet, 
+            consectetur adipisicing elit. 
+            Earum culpa nulla reprehenderit enim eveniet aspernatur 
+            quidem obcaecati asperiores esse distinctio illum iste rem 
+            fugit facere dolor soluta, eum excepturi nam!</a>
+        </footer>
+    </body>
+</html>
