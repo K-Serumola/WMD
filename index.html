@@ -1,39 +1,140 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>artfinder</title>
-        <link rel="stylesheet" type="text/css" href="style.css?v=2">
-        
-    </head>
-    <body>
-        <header>
-            <a href="index.html"><section id="left"><h1>Invigure</h1></section></section></section></a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invigure – Home</title>
 
-            <section id="right">
-              <a href="index.html">home</a>
-              <a href="about.html">about</a>
-              <a href="contact.html">contact</a>
-            </section>
-        </header>
-        
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-        <article>
-            <h1>Medium</h1>
-            <p>A showcase of repherencable art and tecniques</p>
-        </article>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+    }
 
-        <aside>
-            <a href="wet.html">
-                <section id="wet"><h>Wet</h></section>
-            </a> 
-            <a href="dry.html">
-                <section id="dry"><h>Dry</h></section>
-            </a>
-                    
-            <a href="digital.html">
-                <section id="digital"><h>Digital</h></section>
-            </a>
-           
-        </aside>
-    </body>
+    .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -2;
+      overflow: hidden;
+    }
+
+    .video-container video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100vw;
+      min-height: 100vh;
+      width: auto;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .video-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6); /* Darkened for better text contrast */
+      z-index: -1;
+    }
+
+    h1, p.lead {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎥 Video Background -->
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="Background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="video-overlay"></div>
+
+  <!-- ✅ Transparent Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="index.html">Invigure</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="genres.html">Genres</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="artists.html">Artists</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact Us</a></li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary text-white ms-lg-2" href="apply.html">Apply Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🖼️ Hero Section Over Video -->
+  <section class="text-center p-5" style="background: transparent;">
+    <h1>Explore. Express. Invigure.</h1>
+    <p class="lead">Showcasing creativity across painting, cinema, literature, and more.</p>
+    <a href="genres.html" class="btn btn-outline-light btn-lg">Browse Genres</a>
+  </section>
+
+  <!-- 🧩 Quick Panels Section -->
+  <section class="container py-5">
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title">Genres</h3>
+            <p class="card-text">Discover art by category: painting, architecture, sculpture, and more.</p>
+            <a href="genres.html" class="btn btn-outline-dark">View Genres</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title">Artists</h3>
+            <p class="card-text">Meet the creators behind the works and explore their stories.</p>
+            <a href="artists.html" class="btn btn-outline-dark">View Artists</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title">Apply to Exhibit</h3>
+            <p class="card-text">Are you an artist? Share your work with the world.</p>
+            <a href="apply.html" class="btn btn-outline-dark">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 👣 Footer -->
+  <footer class="text-center py-4 bg-dark text-light">
+    <p>&copy; 2025 Invigure. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

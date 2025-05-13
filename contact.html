@@ -1,31 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us – Invigure</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
-    <header>
-        <h1>Contact Me</h1>
+ <body style="background: url('images/contact_background.jpeg') no-repeat center center fixed; background-size: cover;">
+ 
+ <div style=" padding: 2rem;">
+  <!-- Your existing sections go here -->
 
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
+  
+  
+  <!-- Navbar (same as index.html) -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Invigure</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="genres.html">Genres</a></li>
+          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="apply.html">Apply Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    </header>
+  <!-- Contact Section -->
+  <section class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="text-center mb-4">Get in Touch</h2>
+        <p class="text-center text-muted mb-4">
+          Have a question, suggestion, or just want to say hello? We'd love to hear from you.
+        </p>
 
-    <main>
-        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:cse24-008@thuto.bac.ac.bw">cse24-008@thuto.bac.ac.bw</a>.</p>
-    </main>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+          </div>
 
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+          </div>
 
-    <footer>
-        <p>&copy; 2025 Your Name</p>
-    </footer>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
 
-    </body>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary px-5">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-5 text-center">
+      <div class="col-md-6">
+        <h5>Contact Information</h5>
+        <p>Email: <a href="mailto:info@invigure.com">info@invigure.com</a></p>
+        <p>Instagram: <a href="#">@invigure_art</a></p>
+        <p>Twitter/X: <a href="#">@invigure</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-dark text-light">
+    <p>&copy; 2025 Invigure. All rights reserved.</p>
+  </footer>
+</div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
