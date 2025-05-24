@@ -8,27 +8,29 @@
   <!-- Bootstrap & Lightbox -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.9.0/dist/index.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-<style>
-.card-fixed {
-  width: 300px;
-  height: 380px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.card-fixed img {
-  height: 200px;
-  object-fit: cover;
-}
-
-</style>
+  <style>
+    body {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('images/cinema_background.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .card-fixed {
+      width: 300px;
+      height: 380px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-fixed img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
-<body style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/cinema_background.jpg') no-repeat center center fixed; background-size: cover;"></body>
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+  <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Invigure</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -59,10 +61,11 @@
   <!-- Film Gallery Grid -->
   <section class="container py-5">
     <div class="row justify-content-center g-4">
+
       <!-- Card 1 -->
-       <div class="col-md-4 d-flex justify-content-center">
-      <div class="card card-fixed shadow-sm">
-          <a href="https://moviebox.ng/movies/pulp-fiction-Gf3jaAXY9u7?id=6283387899639910176&scene=&page_from=search_detail&type=/movie/detail&utm_source=h5seo_www.google.com" target="_blank">
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card card-fixed shadow-sm">
+          <a href="https://moviebox.ng/movies/pulp-fiction..." target="_blank">
             <img src="images/pulpfiction.jpg" alt="Pulp Fiction Thumbnail" class="card-img-top">
           </a>
           <div class="card-body">
@@ -74,9 +77,9 @@
 
       <!-- Card 2 -->
       <div class="col-md-4 d-flex justify-content-center">
-      <div class="card card-fixed shadow-sm">
-          <a href="https://moviebox.ng/movies/inception-e1BOR6f19C7?id=6391474290696802080&scene=&page_from=search_detail&type=/movie/detail&utm_source=h5seo_www.google.com" target="_blank">
-            <img src="images/inception.jpg" alt="Inception Thumbnail"  class="card-img-top">
+        <div class="card card-fixed shadow-sm">
+          <a href="https://moviebox.ng/movies/inception..." target="_blank">
+            <img src="images/inception.jpg" alt="Inception Thumbnail" class="card-img-top">
           </a>
           <div class="card-body">
             <h5 class="card-title">Inception</h5>
@@ -86,73 +89,59 @@
       </div>
 
       <!-- Card 3 -->
-       <div class="col-md-4 d-flex justify-content-center">
-         <div class="card card-fixed shadow-sm">
-          <a href="https://moviebox.ng/movies/the-shawshank-redemption-8WPZmZ25sP7?id=6571618275791621816&scene=&page_from=search_detail&type=/movie/detail&utm_source=h5seo_www.google.com" target="_blank" >
-            <img src="images/shawshank.jpg" alt="Inception Thumbnail"  class="card-img-top">
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card card-fixed shadow-sm">
+          <a href="https://moviebox.ng/movies/the-shawshank..." target="_blank">
+            <img src="images/shawshank.jpg" alt="Shawshank Thumbnail" class="card-img-top">
           </a>
           <div class="card-body">
             <h5 class="card-title">The Shawshank Redemption</h5>
             <p class="card-text">A timeless story of hope, resilience, and redemption inside prison walls.</p>
           </div>
-        
         </div>
       </div>
 
-    <!-- Card 4 -->
-   <div class="col-md-4 d-flex justify-content-center">
-  <div class="card card-fixed shadow-sm">
-        <a href="https://moviebox.ng/movies/in-the-mood-for-love-2lMAahecWM5?id=4858983779995635384&scene=&page_from=search_detail&type=/movie/detail&utm_source=h5seo_www.google.com" target="_blank" >
-        <img src="images/love.jpg"alt="Inception Thumbnail"  class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">In The Mood For Love</h5>
-          <p class="card-text">Two neighbors form a strong bond after both suspect extramarital activities of their spouses. However, they agree to keep their bond platonic so as not to commit similar wrongs.</p>
-          
+      <!-- Card 4 -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card card-fixed shadow-sm">
+          <a href="https://moviebox.ng/movies/in-the-mood..." target="_blank">
+            <img src="images/love.jpg" alt="In the Mood for Love Thumbnail" class="card-img-top">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">In The Mood For Love</h5>
+            <p class="card-text">Two neighbors bond after suspecting their spouses of infidelity.</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Repeat for 8 more cards -->
-
-  </div>
-
-
-    <!-- Card 5-->
-    <div class="col-md-4 d-flex justify-content-center">
-  <div class="card card-fixed shadow-sm">
-        <a href="https://moviebox.ng/movies/the-breakfast-club-Yye9Rwn9EA7?id=6371197312005736952&scene=&page_from=search_detail&type=/movie/detail&utm_source=h5seo_www.google.com" target="_blank" >
-        <img src="images/club.jpg" alt="Inception Thumbnail"  class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">The Breakfast club</h5>
-          <p class="card-text">Five high school students meet in Saturday detention and discover how they have a great deal more in common than they thought.</p>
+      <!-- Card 5 -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card card-fixed shadow-sm">
+          <a href="https://moviebox.ng/movies/the-breakfast-club..." target="_blank">
+            <img src="images/club.jpg" alt="The Breakfast Club Thumbnail" class="card-img-top">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">The Breakfast Club</h5>
+            <p class="card-text">Five students realize they have more in common than they thought.</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Repeat for 8 more cards -->
-
-  </div>
-
-    <!-- Card 1 -->
-    <div class="col-md-4 d-flex justify-content-center">
-  <div class="card card-fixed shadow-sm">
-        <a href="https://moviebox.ng/movies/the-shining-ylgdDnILYma?id=8704078005783644960&scene=&page_from=search_detail&type=/movie/detail&utm_source=h5seo_www.google.com" target="_blank">
-        <img src="images/shining.jpg" alt="Inception Thumbnail"  class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">The Shining </5>
-          <p class="card-text"> A family heads to an isolated hotel for the winter, where a sinister presence influences the father into violence. At the same time, his psychic son sees horrifying forebodings from both the past and the future.</p>
+      <!-- Card 6 -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card card-fixed shadow-sm">
+          <a href="https://moviebox.ng/movies/the-shining..." target="_blank">
+            <img src="images/shining.jpg" alt="The Shining Thumbnail" class="card-img-top">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">The Shining</h5>
+            <p class="card-text">A father spirals into madness in an isolated, haunted hotel.</p>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-    </section>
-    <!-- Repeat for 8 more cards -->
-
-  </div>
-
 
     </div>
-  
+  </section>
 
   <!-- Footer -->
   <footer class="text-center py-4 bg-dark text-light">
@@ -162,6 +151,5 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.9.0/dist/index.bundle.min.js"></script>
-
 </body>
 </html>
