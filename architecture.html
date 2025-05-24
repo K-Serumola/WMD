@@ -9,13 +9,59 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.9.0/dist/index.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  
+  <style>
+  .feature-box {
+    position: relative;
+    width: 336px;
+    height: 280px;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .feature-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .feature-box .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .feature-box:hover .overlay {
+    opacity: 1;
+  }
+
+  .download-link {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: white;
+  }
+
+  .gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+</style>
+
 </head>
 <body>
- <body style="background: url('images/architecture_background.jpeg') no-repeat center center fixed; background-size: cover;">
- 
+ <body style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/architecute_background.jpeg') no-repeat center center fixed; background-size: cover;">
+
  <div style=" padding: 2rem;">
-  <!-- Your existing sections go here -->
+  
 
 
 
@@ -32,7 +78,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link active" href="genres.html">Genres</a></li>
-          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
           <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="apply.html">Apply Now</a></li>
@@ -48,201 +93,81 @@
       <p class="lead">Discover stunning architectural works from artists around the world.</p>
     </div>
   </section>
-
-  <!-- Gallery -->
-  <section class="container py-5">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-
-      <!-- 25 images – replace paths and artist names -->
-      <!-- Artist 1 -->
-      <div class="col">
-        <a href="images/architecture1.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture1.jpg" class="card-img-top" alt="Architecture 1">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/architecture1.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/architecture1.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture1.jpg" class="card-img-top" alt="Architecture 1">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/architecture1.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/architecture1.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture1.jpg" class="card-img-top" alt="Architecture 1">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/architecture1.jpg" download>Download</a>
-      </div>
-
-      <div class="col">
-        <a href="images/architecture2.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture2.jpg" class="card-img-top" alt="Architecture 2">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/architecture2.jpg" download>Download</a>
-      </div>
-
-      <div class="col">
-        <a href="images/architecture3.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture3.jpg" class="card-img-top" alt="Architecture 3">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/architecture3.jpg" download>Download</a>
-      </div>
-    
-      <!-- Sample for Artist 2 -->
-      <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
+<div class="container py-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+<!-- Feature Boxes Go Here -->
 <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-<div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-<div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-      <!-- Artist 3 -->
-       <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-<div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-<div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-<div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-<div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-      <!--Artist 4-->
-      <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 4 <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-      <!--Artist 5-->
-      <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
-          <img src="images/architecture6.jpg" class="card-img-top" alt="Architecture 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/architecture6.jpg" download>Download</a>
-      </div>
-
+  <div class="feature-box text-center bg-light p-2 rounded shadow-sm">
+    <a href="images/architecture1.jpg" data-bs-toggle="lightbox">
+      <img src="images/architecture1.jpg" alt="La Pedrera - Casa Milà" style="width: 100%; height: 280px; object-fit: cover;">
+    </a>
+    <div class="overlay mt-2">
+      <a href="artist-pages/gaudi.html" style="color: #ffffff; text-decoration: none;">Antoni Gaudi</a>
     </div>
-  </section>
+    <a href="images/architecture1.jpg" download class="btn btn-sm btn-outline-primary mt-2">Download</a>
+  </div>
+</div>
+<div class="col">
+  <div class="feature-box text-center bg-light p-2 rounded shadow-sm">
+    <a href="images/architecture6.jpg" data-bs-toggle="lightbox">
+      <img src="images/architecture6.jpg" alt="St.Patricks Cathedral" style="width: 100%; height: 280px; object-fit: cover;">
+    </a>
+    <div class="overlay mt-2">
+      <a href="artist-pages/james.html" style="color: #ffffff; text-decoration: none;">James Renwick Jr.</a>
+    </div>
+    <a href="images/architecture6.jpg" download class="btn btn-sm btn-outline-primary mt-2">Download</a>
+  </div>
+</div>
+<div class="col">
+  <div class="feature-box text-center bg-light p-2 rounded shadow-sm">
+    <a href="images/architecture7.jpeg" data-bs-toggle="lightbox">
+      <img src="images/architecture7.jpeg" alt="Reggio Mediopadana" style="width: 100%; height: 280px; object-fit: cover;">
+    </a>
+    <div class="overlay mt-2">
+      <a href="artist-pages/santiago.html" style="color: #ffffff; text-decoration: none;">Santiago Calatrava</a>
+    </div>
+    <a href="images/architecture7.jpeg" download class="btn btn-sm btn-outline-primary mt-2">Download</a>
+  </div>
+</div>
+<div class="col">
+  <div class="feature-box text-center bg-light p-2 rounded shadow-sm">
+    <a href="images/architecture8.jpeg" data-bs-toggle="lightbox">
+      <img src="images/architecture8.jpeg" alt="Christiphor Wen" style="width: 100%; height: 280px; object-fit: cover;">
+    </a>
+    <div class="overlay mt-2">
+      <a href="artist-pages/wen.html" style="color: #ffffff; text-decoration: none;">Christiphor  Wen</a>
+    </div>
+    <a href="images/architecture8.jpeg" download class="btn btn-sm btn-outline-primary mt-2">Download</a>
+  </div>
+</div>
+<div class="col">
+  <div class="feature-box text-center bg-light p-2 rounded shadow-sm">
+    <a href="images/architecture9.jpeg" data-bs-toggle="lightbox">
+      <img src="images/architecture9.jpeg" alt="Aqua at Lakeshore East Apartments" style="width: 100%; height: 280px; object-fit: cover;">
+    </a>
+    <div class="overlay mt-2">
+      <a href="artist-pages/Gang.html" style="color: #ffffff; text-decoration: none;">Jeanne Gang</a>
+    </div>
+    <a href="images/architecture9.jpeg" download class="btn btn-sm btn-outline-primary mt-2">Download</a>
+  </div>
+</div>
+<div class="col">
+  <div class="feature-box text-center bg-light p-2 rounded shadow-sm">
+    <a href="images/architecture10.jpg" data-bs-toggle="lightbox">
+      <img src="images/architecture10.jpg" alt="Heydar Aliyev Center" style="width: 100%; height: 280px; object-fit: cover;">
+    </a>
+    <div class="overlay mt-2">
+      <a href="artist-pages/Zaha.html" style="color: #ffffff; text-decoration: none;">Zaha Hadid</a>
+    </div>
+    <a href="images/architecture10.jpg" download class="btn btn-sm btn-outline-primary mt-2">Download</a>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+
 
   <!-- Footer -->
   <footer class="text-center py-4 bg-dark text-light">

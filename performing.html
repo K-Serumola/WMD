@@ -8,8 +8,56 @@
   <!-- Bootstrap & Lightbox CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.9.0/dist/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .feature-box {
+    position: relative;
+    width: 336px;
+    height: 280px;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .feature-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .feature-box .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .feature-box:hover .overlay {
+    opacity: 1;
+  }
+
+  .download-link {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: white;
+  }
+
+  .gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+</style>
 </head>
 <body>
+  <body style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/performance_background.jpg') no-repeat center center fixed; background-size: cover;"></body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
@@ -24,7 +72,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link active" href="genres.html">Genres</a></li>
-          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
           <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="apply.html">Apply Now</a></li>
@@ -41,183 +88,70 @@
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section class="container py-5">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-
-      <!-- Artist 1 -->
-      <div class="col">
-        <a href="images/performing1.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing1.jpg" class="card-img-top" alt="Performing Art 1">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/performing1.jpg" download>Download</a>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <!-- Ballet -->
+  <div class="col">
+    <div class="card shadow-sm border-0" style="max-width: 300px; margin: auto;">
+      <img src="images/ballet1.jpg" class="card-img-top" alt="Classical Ballet" style="height: 600px; object-fit: cover;">
+      <div class="card-body text-center">
+        <h5 class="card-title">Classical Ballet</h5>
+        <p class="card-text">Graceful and timeless storytelling through movement.</p>
+        <a href="https://www.youtube.com/watch?v=L8Kn1nkYNCI" target="_blank" class="btn btn-outline-danger">View Performance</a>
       </div>
-
-      <div class="col">
-        <a href="images/performing2.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing2.jpg" class="card-img-top" alt="Performing Art 2">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/performing2.jpg" download>Download</a>
-      </div>
-
-      <div class="col">
-        <a href="images/performing3.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing3.jpg" class="card-img-top" alt="Performing Art 3">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/performing3.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/performing3.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing3.jpg" class="card-img-top" alt="Performing Art 3">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/performing3.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/performing3.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing3.jpg" class="card-img-top" alt="Performing Art 3">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/performing3.jpg" download>Download</a>
-      </div>
-      <!-- Artist 2 -->
-      <div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div>
-      <!--Artist 3-->
-      <div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div>
-      <!--Artist 4-->
-      <div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div>
-      <!--Artist 5-->
-      <div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/performing6.jpg" data-bs-toggle="lightbox">
-          <img src="images/performing6.jpg" class="card-img-top" alt="Performing Art 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/performing6.jpg" download>Download</a>
-      </div>
-
     </div>
-  </section>
+  </div>
+
+  <!-- Musical -->
+  <div class="col">
+    <div class="card shadow-sm border-0" style="max-width: 300px; margin: auto;">
+      <img src="images/musical1.jpg" class="card-img-top" alt="Hamilton Musical" style="height: 600px; object-fit: cover;">
+      <div class="card-body text-center">
+        <h5 class="card-title">Hamilton Musical</h5>
+        <p class="card-text">A revolutionary blend of hip-hop and American history.</p>
+        <a href="https://www.youtube.com/watch?v=gHej85If2Rg&t=2077s" target="_blank" class="btn btn-outline-danger">View Performance</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chinese Sword Dance -->
+  <div class="col">
+    <div class="card shadow-sm border-0" style="max-width: 300px; margin: auto;">
+      <img src="images/sword1.jpg" class="card-img-top" alt="Chinese Sword Dance" style="height: 600px; object-fit: cover;">
+      <div class="card-body text-center">
+        <h5 class="card-title">Chinese Sword Dance</h5>
+        <p class="card-text">A powerful fusion of martial arts and artful rhythm.</p>
+        <a href="https://www.youtube.com/watch?v=RXl6HLV6R7U" target="_blank" class="btn btn-outline-danger">View Performance</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Opera -->
+  <div class="col">
+    <div class="card shadow-sm border-0" style="max-width: 300px; margin: auto;">
+      <img src="images/opera1.jpg" class="card-img-top" alt="Opera" style="height: 600px; object-fit: cover;">
+      <div class="card-body text-center">
+        <h5 class="card-title">Opera</h5>
+        <p class="card-text">Emotion, grandeur, and timeless vocal artistry.</p>
+        <a href="https://www.youtube.com/watch?v=IYrbdiee9SU" target="_blank" class="btn btn-outline-danger">View Performance</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Concert Dance -->
+  <div class="col">
+    <div class="card shadow-sm border-0" style="max-width: 300px; margin: auto;">
+      <img src="images/concert1.jpg" class="card-img-top" alt="Concert Dance" style="height: 600px; object-fit: cover;">
+      <div class="card-body text-center">
+        <h5 class="card-title">Concert Dance</h5>
+        <p class="card-text">Energetic modern performances with music and light.</p>
+        <a href="https://www.youtube.com/watch?v=b9cG4DzpL_c" target="_blank" class="btn btn-outline-danger">View Performance</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more cards here if needed -->
+</div>
+
 
   <!-- Footer -->
   <footer class="text-center py-4 bg-dark text-light">

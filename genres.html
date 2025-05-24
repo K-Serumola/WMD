@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<body style="background: url('images/genres_background.jpeg') no-repeat center center fixed; background-size: cover;">
+<body style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),background url('images/genres_background.jpg') no-repeat center center fixed; background-size: cover;">
  
  <div style=" padding: 2rem;">
   <!-- Your existing sections go here -->
   <!-- Navbar (same as index.html) -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
-    <div class="container-fluid">
+    <div class="container-fluid" >
       <a class="navbar-brand" href="index.html">Invigure</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="genres.html">Genres</a></li>
-          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
           <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="apply.html">Apply Now</a></li>
@@ -49,20 +48,20 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <!-- Painting -->
       <div class="col">
-        <div class="card shadow-sm border-0">
-          <img src="images/painting.jpg" class="card-img-top" alt="Painting Genre" />
+        <div class="card shadow-sm border-0"  style="max-width: 300px; margin: auto;">
+          <img src="images/painting.jpg" class="card-img-top" alt="Painting Genre" style="height: 600px; width: 100%; object-fit: cover;" />
           <div class="card-body text-center">
             <h5 class="card-title">Painting</h5>
             <p class="card-text">Explore the world of traditional and modern painting.</p>
-            <a href="painting.html" class="btn btn-outline-dark">View Art</a>
+            <a href="paintings.html" class="btn btn-outline-dark">View Art</a>
           </div>
         </div>
       </div>
 
       <!-- Architecture -->
       <div class="col">
-        <div class="card shadow-sm border-0">
-          <img src="images/architecture.jpg" class="card-img-top" alt="Architecture Genre" />
+        <div class="card shadow-sm border-0"  style="max-width: 300px; margin: auto;">
+          <img src="images/architecture.jpg" class="card-img-top" alt="Architecture Genre" style="height: 600px; width: 100%; object-fit: cover;" />
           <div class="card-body text-center">
             <h5 class="card-title">Architecture</h5>
             <p class="card-text">Dive into architectural designs that define cities.</p>
@@ -73,20 +72,20 @@
 
       <!-- Sculpture -->
       <div class="col">
-        <div class="card shadow-sm border-0">
-          <img src="images/sculpture.jpg" class="card-img-top" alt="Sculpture Genre" />
+        <div class="card shadow-sm border-0"  style="max-width: 300px; margin: auto;">
+          <img src="images/sculpture.jpg" class="card-img-top" alt="Sculpture Genre" style="height: 600px; width: 100%; object-fit: cover;" />
           <div class="card-body text-center">
             <h5 class="card-title">Sculpture</h5>
             <p class="card-text">Admire the beauty and craftsmanship of sculptures.</p>
-            <a href="sculpture.html" class="btn btn-outline-dark">View Art</a>
+            <a href="sculptures.html" class="btn btn-outline-dark">View Art</a>
           </div>
         </div>
       </div>
 
       <!-- Literature -->
       <div class="col">
-        <div class="card shadow-sm border-0">
-          <img src="images/literature.jpg" class="card-img-top" alt="Literature Genre" />
+        <div class="card shadow-sm border-0" style="max-width: 300px; margin: auto;">
+          <img src="images/literature.jpg" class="card-img-top" alt="Literature Genre" style="height: 600px; width: 100%; object-fit: cover;" />
           <div class="card-body text-center">
             <h5 class="card-title">Literature</h5>
             <p class="card-text">Explore the world of written word and storytelling.</p>
@@ -97,8 +96,8 @@
 
       <!-- Music -->
       <div class="col">
-        <div class="card shadow-sm border-0">
-          <img src="images/music.jpg" class="card-img-top" alt="Music Genre" />
+        <div class="card shadow-sm border-0" style="max-width: 300px; margin: auto;">
+          <img src="images/music.jpg" class="card-img-top" alt="Music Genre" style="height: 600px; width: 100%; object-fit: cover;" />
           <div class="card-body text-center">
             <h5 class="card-title">Music</h5>
             <p class="card-text">Discover the beauty and rhythm of music from all genres.</p>
@@ -109,20 +108,32 @@
 
       <!-- Performing Arts -->
       <div class="col">
-        <div class="card shadow-sm border-0">
-          <img src="images/performing_arts.jpg" class="card-img-top" alt="Performing Arts Genre" />
+        <div class="card shadow-sm border-0"  style="max-width: 300px; margin: auto;">
+          <img src="images/performing_arts.jpg" class="card-img-top" alt="Performing Arts Genre" style="height: 600px; width: 100%; object-fit: cover;"/>
           <div class="card-body text-center">
             <h5 class="card-title">Performing Arts</h5>
             <p class="card-text">Experience the magic of theater, dance, and performance.</p>
-            <a href="performing_arts.html" class="btn btn-outline-dark">View Art</a>
+            <a href="performing.html" class="btn btn-outline-dark">View Art</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Performing Arts -->
+      <div class="col">
+        <div class="card shadow-sm border-0"  style="max-width: 300px; margin: auto;">
+          <img src="images/performing_arts.jpg" class="card-img-top" alt="Performing Arts Genre" style="height: 600px; width: 100%; object-fit: cover;"/>
+          <div class="card-body text-center">
+            <h5 class="card-title">Performing Arts</h5>
+            <p class="card-text">Experience the magic of theater, dance, and performance.</p>
+            <a href="performing.html" class="btn btn-outline-dark">View Art</a>
           </div>
         </div>
       </div>
 
       <!-- Cinema -->
       <div class="col">
-        <div class="card shadow-sm border-0">
-          <img src="images/cinema.jpg" class="card-img-top" alt="Cinema Genre" />
+        <div class="card shadow-sm border-0"  style="max-width: 300px; margin: auto;">
+          <img src="images/cinema.jpg" class="card-img-top" alt="Cinema Genre" style="height: 600px; width: 100%; object-fit: cover;" />
           <div class="card-body text-center">
             <h5 class="card-title">Cinema</h5>
             <p class="card-text">Dive into the world of films, directors, and cinematic art.</p>

@@ -8,9 +8,58 @@
   <!-- Bootstrap & Lightbox (structure only) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.9.0/dist/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .feature-box {
+    position: relative;
+    width: 336px;
+    height: 280px;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .feature-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .feature-box .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .feature-box:hover .overlay {
+    opacity: 1;
+  }
+
+  .download-link {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: white;
+  }
+
+  .gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+</style>
 </head>
 <body>
+<body style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('images/literature_background.jpg') no-repeat center center fixed; background-size: cover;">
 
+ <div style=" padding: 2rem;">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
     <div class="container-fluid">
@@ -24,7 +73,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link active" href="genres.html">Genres</a></li>
-          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
           <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="apply.html">Apply Now</a></li>
@@ -42,173 +90,54 @@
   </section>
 
   <!-- Gallery -->
-  <section class="container py-5">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-
-      <!-- Artist 1 -->
-      <div class="col">
-        <a href="images/literature1.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature1.jpg" class="card-img-top" alt="Literature 1">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/literature1.jpg" download>Download</a>
-      </div>
-
-      <div class="col">
-        <a href="images/literature2.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature2.jpg" class="card-img-top" alt="Literature 2">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/literature2.jpg" download>Download</a>
-      </div>
-
-      <div class="col">
-        <a href="images/literature3.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature3.jpg" class="card-img-top" alt="Literature 3">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/literature3.jpg" download>Download</a>
-      </div>
-
-     <!-- Artist 2 -->
-      <div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div>
-      <!--Artist 3-->
-<div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div>
-
-      <!--Artist 4-->
-      <div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div>
-      <!--Artist 5-->
-      <div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/literature6.jpg" data-bs-toggle="lightbox">
-          <img src="images/literature6.jpg" class="card-img-top" alt="Literature 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/literature6.jpg" download>Download</a>
-      </div>
-    
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+  <!-- Book 1 -->
+  <div class="col">
+    <div class="feature-box text-center bg-light p-3 rounded shadow-sm h-100 d-flex flex-column">
+      <img src="images/book1.jpg" alt="Book Cover" style="width: 100%; height: 300px; object-fit: cover;" class="mb-3 rounded">
+      <h5 class="mb-1">Demian</h5>
+      <p class="text-muted small mb-1">by Hermann Hesse</p>
+      <p class="text-muted small flex-grow-1">A powerful new translation of Nobel Prize winner Hermann Hesse’s masterpiece of youthful rebellion—with a foreword and cover art by James Franco A young man awakens to selfhood and to a world of possibilities beyond the conventions of his upbringing in Nobel Prize winner Hermann Hesse’s beloved novel Demian. Emil Sinclair is a quiet boy drawn into a forbidden yet seductive realm of petty crime and defiance. His guide is his precocious, mysterious classmate Max Demian, who provokes in Emil a search for self-discovery and spiritual fulfillment. A brilliant psychological portrait, Demian is given new life in this translation, which together with James Franco’s personal and inspiring foreword will bring a new generation to Hesse’s widely influential coming-of-age novel.</p>
+      <a href="https://www.goodreads.com/book/show/24861.Demian?ref=nav_sb_ss_1_7" target="_blank" class="btn btn-sm btn-outline-primary">Learn More</a>
     </div>
-  </section>
+  </div>
+
+  <!-- Book 2 -->
+  <div class="col">
+    <div class="feature-box text-center bg-light p-3 rounded shadow-sm h-100 d-flex flex-column">
+      <img src="images/book2.jpg" alt="Book Cover" style="width: 100%; height: 300px; object-fit: cover;" class="mb-3 rounded">
+      <h5 class="mb-1">Pride and Prejudice</h5>
+      <p class="text-muted small mb-1">by Jane Austen</p>
+      <p class="text-muted small flex-grow-1">Since its immediate success in 1813, Pride and Prejudice has remained one of the most popular novels in the English language. Jane Austen called this brilliant work and “her own darling child and ” and its vivacious heroine, Elizabeth Bennet, and “as delightful a creature as ever appeared in print. and ” The romantic clash between the opinionated Elizabeth and her proud beau, Mr. Darcy, is a splendid performance of civilized sparring. And Jane Austen’s radiant wit sparkles as her characters dance a delicate quadrille of flirtation and intrigue, making this book the most superb comedy of manners of Regency England.</p>
+      <a href="https://www.goodreads.com/book/show/129915654-pride-prejudice?ref=nav_sb_ss_1_7" target="_blank" class="btn btn-sm btn-outline-primary">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Book 3 -->
+  <div class="col">
+    <div class="feature-box text-center bg-light p-3 rounded shadow-sm h-100 d-flex flex-column">
+      <img src="images/book3.jpg" alt="Book Cover" style="width: 100%; height: 300px; object-fit: cover;" class="mb-3 rounded">
+      <h5 class="mb-1">Art of war</h5>
+      <p class="text-muted small mb-1">by Sun Tzu</p>
+      <p class="text-muted small flex-grow-1">Twenty-Five Hundred years ago, Sun Tzu wrote this classic book of military strategy based on Chinese warfare and military thought. Since that time, all levels of military have used the teaching on Sun Tzu to warfare and civilization have adapted these teachings for use in politics, business and everyday life. The Art of War is a book which should be used to gain advantage of opponents in the boardroom and battlefield alike.</p>
+      <a href="https://www.goodreads.com/book/show/10534.The_Art_of_War?from_search=true&from_srp=true&qid=cH1I3czral&rank=1" target="_blank" class="btn btn-sm btn-outline-primary">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Book 4 -->
+  <div class="col">
+    <div class="feature-box text-center bg-light p-3 rounded shadow-sm h-100 d-flex flex-column">
+      <img src="images/book4.jpg" alt="Book Cover" style="width: 100%; height: 300px; object-fit: cover;" class="mb-3 rounded">
+      <h5 class="mb-1">where europe begins</h5>
+      <p class="text-muted small mb-1">Yoko Tawada</p>
+      <p class="text-muted small flex-grow-1">A collection of writings by the award-winning author includes fairy tales, family histories, letters, dreams, and everyday observations on such topics as the ghost of a burned woman, a woman traveling on the Trans-Siberian railroad, a mechanical doll, and a monk who leaps into his own reflection.</p>
+      <a href="https://www.goodreads.com/book/show/159453.Where_Europe_Begins?ref=nav_sb_ss_1_19" target="_blank" class="btn btn-sm btn-outline-primary">Learn More</a>
+    </div>
+  </div>
+</div>
+
+
+      
 
   <!-- Footer -->
   <footer class="text-center py-4 bg-dark text-light">

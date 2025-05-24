@@ -4,13 +4,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Painting Art Gallery – Invigure</title>
-
+  <link rel="stylesheet" href="style.css">
   <!-- Bootstrap CSS (Optional, you can decide to use later) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Lightbox CSS (Optional, you can decide to use later) -->
   <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.9.0/dist/index.css" rel="stylesheet">
+ <style>
+  .feature-box {
+    position: relative;
+    width: 336px;
+    height: 280px;
+    overflow: hidden;
+    margin: auto;
+  }
 
+  .feature-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .feature-box .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .feature-box:hover .overlay {
+    opacity: 1;
+  }
+
+  .download-link {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: white;
+  }
+
+  .gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+</style>
 </head>
 <body>
 <body style="background: url('images/painting_background.jpeg') no-repeat center center fixed; background-size: cover;">
@@ -31,7 +76,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link active" href="genres.html">Genres</a></li>
-          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
           <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="apply.html">Apply Now</a></li>
@@ -47,222 +91,77 @@
       <p class="lead text-muted">Discover paintings from talented artists all over the world.</p>
     </div>
   </section>
-
+<div class="container py-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
   <!-- Painting Gallery Section -->
-  <section class="container py-5">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <!-- Artist 1 Paintings -->
-      <div class="col">
-        <a href="images/painting1.jpg" data-bs-toggle="lightbox" data-bs-target="#painting1">
-          <img src="images/painting1.jpg" class="card-img-top" alt="Painting 1" />
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/painting1.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      <div class="col">
-        <a href="images/painting2.jpg" data-bs-toggle="lightbox" data-bs-target="#painting2">
-          <img src="images/painting2.jpg" class="card-img-top" alt="Painting 2" />
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/painting2.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      <div class="col">
-        <a href="images/painting3.jpg" data-bs-toggle="lightbox" data-bs-target="#painting3">
-          <img src="images/painting3.jpg" class="card-img-top" alt="Painting 3" />
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/painting3.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      <div class="col">
-        <a href="images/painting4.jpg" data-bs-toggle="lightbox" data-bs-target="#painting4">
-          <img src="images/painting4.jpg" class="card-img-top" alt="Painting 4" />
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/painting4.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      <div class="col">
-        <a href="images/painting5.jpg" data-bs-toggle="lightbox" data-bs-target="#painting5">
-          <img src="images/painting5.jpg" class="card-img-top" alt="Painting 5" />
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/painting5.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      <!--  Artist 2  -->
-
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-<!-- Artist 3 -->
-
-
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-      
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-      <!--Artist 4-->
-      
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-
-      
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-      
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-      
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-      <!--Artist 5-->
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/painting6.jpg" data-bs-toggle="lightbox" data-bs-target="#painting6">
-          <img src="images/painting6.jpg" class="card-img-top" alt="Painting 6" />
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/painting6.jpg" class="download-btn" download>Download</a>
-      </div>
+  <div class="col">
+  <div class="feature-box text-center bg-light p-2 rounded shadow-sm">
+    <a href="images/painting1.jpg" data-bs-toggle="lightbox">
+      <img src="images/painting1.jpg" alt="Painting 1" style="width: 100%; height: 280px; object-fit: cover;">
+    </a>
+    <div class="overlay mt-2">
+      <a href="artist-pages/leek.html" style="color: #ffffff; text-decoration: none;">Lee K</a>
     </div>
-  </section>
+    <a href="images/painting1.jpg" download class="btn btn-sm btn-outline-primary mt-2">Download</a>
+  </div>
+</div>
+<div class="col">
+  <div class="feature-box text-center bg-light p-2 rounded shadow-sm">
+    <a href="images/painting2.jpg" data-bs-toggle="lightbox">
+      <img src="images/painting2.jpg" alt="Painting 1" style="width: 100%; height: 280px; object-fit: cover;">
+    </a>
+    <div class="overlay mt-2">
+      <a href="artist-pages/van-gogh.html" style="color: #ffffff; text-decoration: none;">Vincent van Gogh</a>
+    </div>
+    <a href="images/painting2.jpg" download class="btn btn-sm btn-outline-primary mt-2">Download</a>
+  </div>
+</div>
+<div class="col">
+  <div class="feature-box text-center bg-light p-2 rounded shadow-sm">
+    <a href="images/painting3.jpg" data-bs-toggle="lightbox">
+      <img src="images/painting3.jpg" alt="Painting 1" style="width: 100%; height: 280px; object-fit: cover;">
+    </a>
+    <div class="overlay mt-2">
+      <a href="artist-pages/jenny.html" style="color: #ffffff; text-decoration: none;">jenny saville</a>
+    </div>
+    <a href="images/painting3.jpg" download class="btn btn-sm btn-outline-primary mt-2">Download</a>
+  </div>
+</div>
+<div class="col">
+  <div class="feature-box text-center bg-light p-2 rounded shadow-sm">
+    <a href="images/painting4.jpg" data-bs-toggle="lightbox">
+      <img src="images/painting4.jpg" alt="Painting 1" style="width: 100%; height: 280px; object-fit: cover;">
+    </a>
+    <div class="overlay mt-2">
+      <a href="artist-pages/Raph.html" style="color: #ffffff; text-decoration: none;">Raffaello Sanzio da Urbino</a>
+    </div>
+    <a href="images/painting4.jpg" download class="btn btn-sm btn-outline-primary mt-2">Download</a>
+  </div>
+</div>
+<div class="col">
+  <div class="feature-box text-center bg-light p-2 rounded shadow-sm">
+    <a href="images/painting5.jpg" data-bs-toggle="lightbox">
+      <img src="images/painting5.jpg" alt="Painting 1" style="width: 100%; height: 280px; object-fit: cover;">
+    </a>
+    <div class="overlay mt-2">
+      <a href="artist-pages/Michelangelo.html" style="color: #ffffff; text-decoration: none;">Michelangelo Simoni</a>
+    </div>
+    <a href="images/painting5.jpg" download class="btn btn-sm btn-outline-primary mt-2">Download</a>
+  </div>
+</div>
+<div class="col">
+  <div class="feature-box text-center bg-light p-2 rounded shadow-sm">
+    <a href="images/painting6.jpg" data-bs-toggle="lightbox">
+      <img src="images/painting6.jpg" alt="Painting 1" style="width: 100%; height: 280px; object-fit: cover;">
+    </a>
+    <div class="overlay mt-2">
+      <a href="artist-pages/Davinci.html" style="color: #ffffff; text-decoration: none;">Leonardo De Vinci</a>
+    </div>
+    <a href="images/painting6.jpg" download class="btn btn-sm btn-outline-primary mt-2">Download</a>
+  </div>
+</div>
+  </div>
+</div>
 
   <!-- Footer -->
   <footer class="text-center py-4 bg-dark text-light">

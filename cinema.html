@@ -8,9 +8,25 @@
   <!-- Bootstrap & Lightbox -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.9.0/dist/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+<style>
+.card-fixed {
+  width: 300px;
+  height: 380px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-fixed img {
+  height: 200px;
+  object-fit: cover;
+}
+
+</style>
 </head>
 <body>
-
+<body style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/cinema_background.jpg') no-repeat center center fixed; background-size: cover;"></body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
     <div class="container-fluid">
@@ -24,7 +40,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link active" href="genres.html">Genres</a></li>
-          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
           <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="apply.html">Apply Now</a></li>
@@ -41,189 +56,103 @@
     </div>
   </section>
 
-  <!-- Gallery -->
+  <!-- Film Gallery Grid -->
   <section class="container py-5">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-
-      <!-- Artist 1 -->
-      <div class="col">
-        <a href="images/cinema1.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema1.jpg" class="card-img-top" alt="Cinema Art 1">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/cinema1.jpg" download>Download</a>
+    <div class="row justify-content-center g-4">
+      <!-- Card 1 -->
+       <div class="col-md-4 d-flex justify-content-center">
+      <div class="card card-fixed shadow-sm">
+          <a href="https://moviebox.ng/movies/pulp-fiction-Gf3jaAXY9u7?id=6283387899639910176&scene=&page_from=search_detail&type=/movie/detail&utm_source=h5seo_www.google.com" target="_blank">
+            <img src="images/pulpfiction.jpg" alt="Pulp Fiction Thumbnail" class="card-img-top">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Pulp Fiction</h5>
+            <p class="card-text">A cult classic that redefined nonlinear storytelling and pop dialogue.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="col">
-        <a href="images/cinema2.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema2.jpg" class="card-img-top" alt="Cinema Art 2">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/cinema2.jpg" download>Download</a>
+      <!-- Card 2 -->
+      <div class="col-md-4 d-flex justify-content-center">
+      <div class="card card-fixed shadow-sm">
+          <a href="https://moviebox.ng/movies/inception-e1BOR6f19C7?id=6391474290696802080&scene=&page_from=search_detail&type=/movie/detail&utm_source=h5seo_www.google.com" target="_blank">
+            <img src="images/inception.jpg" alt="Inception Thumbnail"  class="card-img-top">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Inception</h5>
+            <p class="card-text">A mind-bending dive into dreams and the nature of reality by Christopher Nolan.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="col">
-        <a href="images/cinema3.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema3.jpg" class="card-img-top" alt="Cinema Art 3">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/cinema3.jpg" download>Download</a>
-      </div>
-       <div class="col">
-        <a href="images/cinema3.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema3.jpg" class="card-img-top" alt="Cinema Art 3">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/cinema3.jpg" download>Download</a>
-      </div>
-       <div class="col">
-        <a href="images/cinema3.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema3.jpg" class="card-img-top" alt="Cinema Art 3">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/cinema3.jpg" download>Download</a>
+      <!-- Card 3 -->
+       <div class="col-md-4 d-flex justify-content-center">
+         <div class="card card-fixed shadow-sm">
+          <a href="https://moviebox.ng/movies/the-shawshank-redemption-8WPZmZ25sP7?id=6571618275791621816&scene=&page_from=search_detail&type=/movie/detail&utm_source=h5seo_www.google.com" target="_blank" >
+            <img src="images/shawshank.jpg" alt="Inception Thumbnail"  class="card-img-top">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">The Shawshank Redemption</h5>
+            <p class="card-text">A timeless story of hope, resilience, and redemption inside prison walls.</p>
+          </div>
+        
+        </div>
       </div>
 
-      <!-- Artist 2 -->
-      <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/cinema6.jpg" download>Download</a>
+    <!-- Card 4 -->
+   <div class="col-md-4 d-flex justify-content-center">
+  <div class="card card-fixed shadow-sm">
+        <a href="https://moviebox.ng/movies/in-the-mood-for-love-2lMAahecWM5?id=4858983779995635384&scene=&page_from=search_detail&type=/movie/detail&utm_source=h5seo_www.google.com" target="_blank" >
+        <img src="images/love.jpg"alt="Inception Thumbnail"  class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">In The Mood For Love</h5>
+          <p class="card-text">Two neighbors form a strong bond after both suspect extramarital activities of their spouses. However, they agree to keep their bond platonic so as not to commit similar wrongs.</p>
+          
+        </div>
       </div>
-       <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div> <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div> <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div> <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/cinema6.jpg" download>Download</a>
+    </div>
+
+    <!-- Repeat for 8 more cards -->
+
+  </div>
+
+
+    <!-- Card 5-->
+    <div class="col-md-4 d-flex justify-content-center">
+  <div class="card card-fixed shadow-sm">
+        <a href="https://moviebox.ng/movies/the-breakfast-club-Yye9Rwn9EA7?id=6371197312005736952&scene=&page_from=search_detail&type=/movie/detail&utm_source=h5seo_www.google.com" target="_blank" >
+        <img src="images/club.jpg" alt="Inception Thumbnail"  class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">The Breakfast club</h5>
+          <p class="card-text">Five high school students meet in Saturday detention and discover how they have a great deal more in common than they thought.</p>
+        </div>
       </div>
-      <!--Artist 3-->
-       <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div> <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div> <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div> <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div> <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 3</div>
-        <a href="images/cinema6.jpg" download>Download</a>
+    </div>
+
+    <!-- Repeat for 8 more cards -->
+
+  </div>
+
+    <!-- Card 1 -->
+    <div class="col-md-4 d-flex justify-content-center">
+  <div class="card card-fixed shadow-sm">
+        <a href="https://moviebox.ng/movies/the-shining-ylgdDnILYma?id=8704078005783644960&scene=&page_from=search_detail&type=/movie/detail&utm_source=h5seo_www.google.com" target="_blank">
+        <img src="images/shining.jpg" alt="Inception Thumbnail"  class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">The Shining </5>
+          <p class="card-text"> A family heads to an isolated hotel for the winter, where a sinister presence influences the father into violence. At the same time, his psychic son sees horrifying forebodings from both the past and the future.</p>
+        </div>
       </div>
-      <!--Artist 4-->
-       <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div>
-       <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div>
-       <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div> 
-       <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div>
-       <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 4</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div>
-      <!--Artist 5-->
-       <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div>
-       <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div>
-       <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div>
-       <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div>
-       <div class="col">
-        <a href="images/cinema6.jpg" data-bs-toggle="lightbox">
-          <img src="images/cinema6.jpg" class="card-img-top" alt="Cinema Art 6">
-        </a>
-        <div class="overlay">Artist Name 5</div>
-        <a href="images/cinema6.jpg" download>Download</a>
-      </div>
+    </div>
+    </div>
+    </section>
+    <!-- Repeat for 8 more cards -->
+
+  </div>
+
 
     </div>
-  </section>
+  
 
   <!-- Footer -->
   <footer class="text-center py-4 bg-dark text-light">

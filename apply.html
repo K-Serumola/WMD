@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apply Now – Invigure</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.9.0/dist/index.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -2;
+      overflow: hidden;
+    }
+
+    .video-container video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100vw;
+      min-height: 100vh;
+      width: auto;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .video-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6); /* Darkened for better text contrast */
+      z-index: -1;
+    }
+
+    h1, p.lead {
+      color: white;
+    }
+  </style>
+</head>
+<body style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/apply_background.jpg') no-repeat center center fixed; background-size: cover; color: rgba(255, 255, 255, 0.9);">
+
+  <!-- Navbar (same as index.html) -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+    <div class="container-fluid" >
+      <a class="navbar-brand" href="index.html">Invigure</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="genres.html">Genres</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="apply.html">Apply Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Hero Section -->
+    <div class="text-center mb-4">
+  <p class="lead text-light">
+    Become part of a creative community that celebrates expression in all its forms. As an Invigure artist, you'll showcase your work in a vibrant digital gallery, connect with global audiences, and inspire the next wave of creators.
+  </p>
+</div>
+
+
+    <!-- Application Form -->
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <form action="mailto:info@invigure.com" method="POST" enctype="text/plain">
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" name="Full Name" placeholder="Jane Doe" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" name="Email" placeholder="jane@example.com" required />
+          </div>
+          <div class="mb-3">
+            <label for="portfolio" class="form-label">Portfolio / Website</label>
+            <input type="url" class="form-control" id="portfolio" name="Portfolio" placeholder="https://yourart.com" />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Why do you want to join Invigure?</label>
+            <textarea class="form-control" id="message" name="Message" rows="5" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-outline-light px-5">Submit Application</button>
+          </div>
+        </form>
+        <p class="text-center mt-3 small text-white-50">* Your email client will open to complete the submission.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-dark text-light mt-5">
+    <p>&copy; 2025 Invigure. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

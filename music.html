@@ -8,9 +8,58 @@
   <!-- Bootstrap & Lightbox for structure only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.9.0/dist/index.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <style>
+  .feature-box {
+    position: relative;
+    width: 336px;
+    height: 280px;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .feature-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .feature-box .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .feature-box:hover .overlay {
+    opacity: 1;
+  }
+
+  .download-link {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: white;
+  }
+
+  .gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+</style>
 </head>
 <body>
+<body style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('images/music_background.jpg') no-repeat center center fixed; background-size: cover;">
 
+ <div style=" padding: 2rem;">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
     <div class="container-fluid">
@@ -24,7 +73,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link active" href="genres.html">Genres</a></li>
-          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
           <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="apply.html">Apply Now</a></li>
@@ -41,180 +89,71 @@
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section class="container py-5">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-
-      <!-- Artist 1 -->
-      <div class="col">
-        <a href="images/music1.jpg" data-bs-toggle="lightbox">
-          <img src="images/music1.jpg" class="card-img-top" alt="Music Art 1">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/music1.jpg" download>Download</a>
-      </div>
-
-      <div class="col">
-        <a href="images/music2.jpg" data-bs-toggle="lightbox">
-          <img src="images/music2.jpg" class="card-img-top" alt="Music Art 2">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/music2.jpg" download>Download</a>
-      </div>
-
-      <div class="col">
-        <a href="images/music3.jpg" data-bs-toggle="lightbox">
-          <img src="images/music3.jpg" class="card-img-top" alt="Music Art 3">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/music3.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/music3.jpg" data-bs-toggle="lightbox">
-          <img src="images/music3.jpg" class="card-img-top" alt="Music Art 3">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/music3.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/music3.jpg" data-bs-toggle="lightbox">
-          <img src="images/music3.jpg" class="card-img-top" alt="Music Art 3">
-        </a>
-        <div class="overlay">Artist Name 1</div>
-        <a href="images/music3.jpg" download>Download</a>
-      </div>
-      <!-- Example for Artist 2 -->
-      <div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div>
-      <div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div>
-      <!--Artist 3-->
-      <div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div>
-      <!--Artist 4-->
-      <div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div>
-      <!--Artist 5-->
-      <div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div><div class="col">
-        <a href="images/music6.jpg" data-bs-toggle="lightbox">
-          <img src="images/music6.jpg" class="card-img-top" alt="Music Art 6">
-        </a>
-        <div class="overlay">Artist Name 2</div>
-        <a href="images/music6.jpg" download>Download</a>
-      </div>
-
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+  <!-- Song 1 -->
+  <div class="col">
+    <div class="feature-box text-center bg-light p-3 rounded shadow-sm h-100 d-flex flex-column">
+      <img src="images/song1.jpg" alt="Song Cover" style="width: 100%; height: 300px; object-fit: cover;" class="mb-3 rounded">
+      <h5 class="mb-1">the nutcracker suite</h5>
+      <p class="text-muted small mb-1">
+        by <a href="https://open.spotify.com/artist/3MKCzCnpzw3TjUYs2v7vDA" style="color: #000; text-decoration: none;"> Pyotr Ilyich Tchaikovsky</a>
+      </p>
+      <a href="https://open.spotify.com/search/the%20nutcracker" target="_blank" class="btn btn-sm btn-success">Listen on Spotify</a>
     </div>
-  </section>
+  </div>
+
+  <!-- Song 2 -->
+  <div class="col">
+    <div class="feature-box text-center bg-light p-3 rounded shadow-sm h-100 d-flex flex-column">
+      <img src="images/song2.jpg" alt="Song Cover" style="width: 100%; height: 300px; object-fit: cover;" class="mb-3 rounded">
+      <h5 class="mb-1">Fur Elise</h5>
+      <p class="text-muted small mb-1">
+        by <a href="artist-pages/lorde.html" style="color: #000; text-decoration: none;">Ludwig Van Beethoven</a>
+      </p>
+      <a href="https://open.spotify.com/track/1DfGPEHxTYeaJpiNA4xUb5?si=97928fe902eb4eea" target="_blank" class="btn btn-sm btn-success">Listen on Spotify</a>
+    </div>
+  </div>
+   <!-- Song 3 -->
+  <div class="col">
+    <div class="feature-box text-center bg-light p-3 rounded shadow-sm h-100 d-flex flex-column">
+      <img src="images/song3.jpg" alt="Song Cover" style="width: 100%; height: 300px; object-fit: cover;" class="mb-3 rounded">
+      <h5 class="mb-1">Lacrimosa</h5>
+      <p class="text-muted small mb-1">
+        by <a href="https://open.spotify.com/artist/4NJhFmfw43RLBLjQvxDuRS" style="color: #000; text-decoration: none;">The Weeknd</a>
+      </p>
+      <a href="https://open.spotify.com/search/lacrimosa" target="_blank" class="btn btn-sm btn-success">Listen on Spotify</a>
+    </div>
+  </div>
+
+   <!-- Song 4 -->
+  <div class="col">
+    <div class="feature-box text-center bg-light p-3 rounded shadow-sm h-100 d-flex flex-column">
+      <img src="images/song4.jpg" alt="Song Cover" style="width: 100%; height: 300px; object-fit: cover;" class="mb-3 rounded">
+      <h5 class="mb-1">The French Library</h5>
+      <p class="text-muted small mb-1">
+        by <a href="https://open.spotify.com/artist/6c9mrV72IOeJ5imCUK281g" style="color: #000; text-decoration: none;">Franz Gordon</a>
+      </p>
+      <a href="https://open.spotify.com/track/5mrxUVYEyowgATPU35aZay?si=30713d0028fe4d31" target="_blank" class="btn btn-sm btn-success">Listen on Spotify</a>
+    </div>
+  </div>
+
+   
+
+   <!-- Song 5 -->
+  <div class="col">
+    <div class="feature-box text-center bg-light p-3 rounded shadow-sm h-100 d-flex flex-column">
+      <img src="images/song5.jpg" alt="Song Cover" style="width: 100%; height: 300px; object-fit: cover;" class="mb-3 rounded">
+      <h5 class="mb-1">Cello Suite No. 1 in G major</h5>
+      <p class="text-muted small mb-1">
+        by <a href="https://open.spotify.com/artist/5aIqB5nVVvmFsvSdExz408" style="color: #000; text-decoration: none;">Johann Sebastian Bach</a>
+      </p>
+      <a href="https://open.spotify.com/track/17i5jLpzndlQhbS4SrTd0B?si=0efab18cb25c4451" target="_blank" class="btn btn-sm btn-success">Listen on Spotify</a>
+    </div>
+  </div>
+
+  
+</div>
+
 
   <!-- Footer -->
   <footer class="text-center py-4 bg-dark text-light">

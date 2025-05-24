@@ -12,7 +12,7 @@
 
 </head>
 <body>
- <body style="background: url('images/contact_background.jpeg') no-repeat center center fixed; background-size: cover;">
+ <body style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/contact_background.jpeg') no-repeat center center fixed; background-size: cover;"></body>
  
  <div style=" padding: 2rem;">
   <!-- Your existing sections go here -->
@@ -32,7 +32,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="genres.html">Genres</a></li>
-          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a></li>
           <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="apply.html">Apply Now</a></li>
@@ -50,26 +49,27 @@
           Have a question, suggestion, or just want to say hello? We'd love to hear from you.
         </p>
 
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control" id="name" placeholder="John Doe" required>
-          </div>
+        <form action="mailto:info@invigure.com" method="POST" enctype="text/plain">
+  <div class="mb-3">
+    <label for="name" class="form-label">Your Name</label>
+    <input type="text" class="form-control" id="name" name="Name" placeholder="John Doe" required>
+  </div>
 
-          <div class="mb-3">
-            <label for="email" class="form-label">Your Email</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-          </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Your Email</label>
+    <input type="email" class="form-control" id="email" name="Email" placeholder="name@example.com" required>
+  </div>
 
-          <div class="mb-3">
-            <label for="message" class="form-label">Your Message</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
-          </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">Your Message</label>
+    <textarea class="form-control" id="message" name="Message" rows="5" placeholder="Write your message here..." required></textarea>
+  </div>
 
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary px-5">Send Message</button>
-          </div>
-        </form>
+  <div class="text-center">
+    <button type="submit" class="btn btn-primary px-5">Send Message</button>
+  </div>
+</form>
+
       </div>
     </div>
 
